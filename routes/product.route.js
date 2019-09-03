@@ -1,15 +1,15 @@
 // REQUIRE EXPRESS
 
-const express = require("express");
+const express = require('express');
 const router = express.Router();
 
 // REQUIRE CONTROLLERS
 
-const productController = require("../controllers/product.controller");
+const product_controller = require('../controllers/product.controller');
 
 // TEST URL TO CHECK IF ALL FILE ARE COMMUNICATING CORRECTLY
 
-router.get("/test", productController.test);
+router.get('/test', product_controller.test);
 
 // EXPORT ROUTER
 
